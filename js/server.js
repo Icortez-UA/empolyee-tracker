@@ -128,7 +128,7 @@ connection.connect(function(err) {
       var query = "SELECT id as value, department as name FROM departments";
       connection.query(query, function (err, res) {
         if (err) throw err;
-        array = JSON.parse(JSON.stringify(res));
+        arr = JSON.parse(JSON.stringify(res));
         var questions = [
           {
             type: "input",
@@ -145,7 +145,7 @@ connection.connect(function(err) {
             type: 'list',
             name: 'department',
             message: 'which department does this new role belong to?',
-            choices: array
+            choices: arr
           },];
           inquirer.prompt(questions).then(function(answer) {
             connection.query("INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)",

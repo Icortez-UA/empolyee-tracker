@@ -1,12 +1,12 @@
-INSERT into departments (name)
+INSERT into departments (department)
 VALUES ("Sales");
-INSERT into departments (name)
+INSERT into departments (department)
 VALUES ("Engineering");
-INSERT into departments (name)
+INSERT into departments (department)
 VALUES ("Finance");
-INSERT into departments (name)
+INSERT into departments (department)
 VALUES ("Legal");
-INSERT into departments (name)
+INSERT into departments (department)
 VALUES ("Manager");
 
 select * from departments;
@@ -33,8 +33,8 @@ values ("Jim", "Baker", 4);
 INSERT into employees (first_name, last_name, roles_id)
 values ("George", "Washington", 5);
 INSERT into employees (first_name, last_name, roles_id)
-values ("Meghan", "Kelly", 6);
-INSERT into employees (first_name, last_name, roles_id, manager_id)
-values ("Tom", "Hanks", 4,4);
+values ("Meghan", "Kelly", 4);
 INSERT into employees (first_name, last_name, roles_id)
-values ("Dolly", "Parton", 6);
+values ("Tom", "Hanks", 4);
+INSERT into employees (first_name, last_name, roles_id)
+values ("Dolly", "Parton", 4);
